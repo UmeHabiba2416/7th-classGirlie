@@ -162,26 +162,6 @@ Your 7th-Class Girl 💗`;
     typeLetter(letterFull, letterTextEl, 12);
   });
 
-  /* ---------- Gallery lightbox ---------- */
-  const galleryItems = document.querySelectorAll('.gallery-item');
-  const lightbox = document.getElementById('lightbox');
-  const lightboxPhoto = document.getElementById('lightboxPhoto');
-  const lightboxCaption = document.getElementById('lightboxCaption');
-  const lightboxClose = document.getElementById('lightboxClose');
-
-  galleryItems.forEach(item => {
-    item.addEventListener('click', () => {
-      const caption = item.getAttribute('data-caption');
-      lightboxCaption.textContent = caption;
-      lightboxPhoto.textContent = item.querySelector('.polaroid-photo').textContent;
-      lightbox.classList.add('open');
-    });
-  });
-  function closeLightbox(){ lightbox.classList.remove('open'); }
-  lightboxClose.addEventListener('click', closeLightbox);
-  lightbox.addEventListener('click', (e) => { if (e.target === lightbox) closeLightbox(); });
-  document.addEventListener('keydown', (e) => { if (e.key === 'Escape') closeLightbox(); });
-
   /* ---------- Reasons heart cards ---------- */
   document.querySelectorAll('.heart-card').forEach(card => {
     card.addEventListener('click', () => card.classList.toggle('flipped'));
