@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>Happy Birthday, My Girl ♡</title>
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>💗</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,500&family=Great+Vibes&family=Quicksand:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Ambient background layers -->
+<div class="sky" aria-hidden="true">
+  <div class="stars"></div>
+  <div class="lights"></div>
+</div>
+<div class="hearts-field" id="heartsField" aria-hidden="true"></div>
+
+<!-- Music toggle -->
+<button id="musicToggle" class="music-toggle" aria-label="Play birthday music">
+  <span class="music-icon">♪</span>
+</button>
+<audio id="bgMusic" loop preload="none">
+  <!-- Replace this src with your own song, e.g. src="assets/song.mp3" -->
+  <source src="assets/song.mp3" type="audio/mpeg">
+</audio>
+
+<!-- ============ OPENING SCREEN ============ -->
+<section id="opening" class="opening">
+  <div class="opening-inner">
+    <p class="eyebrow-line">21st September</p>
+    <h1 class="opening-title">Someone Very Special<br>Was Born on 21st September... ♡</h1>
+    <p class="opening-reveal">And that someone is <span class="you">YOU</span>.</p>
+    <button id="openGiftBtn" class="gift-button">
+      <span class="gift-box" id="giftBox">
+        <span class="gift-lid"></span>
+        <span class="gift-base"></span>
+        <span class="gift-ribbon-v"></span>
+        <span class="gift-ribbon-h"></span>
+      </span>
+      <span class="gift-label">Open Your Little Surprise 🎁</span>
+    </button>
+    <p class="made-with-love">Made with so much love, just for you.</p>
+  </div>
+</section>
+
+<!-- ============ MAIN SITE (hidden until gift opens) ============ -->
+<main id="mainSite" class="main-site">
+
+  <!-- HERO -->
+  <section class="hero" id="hero">
+    <div class="hero-cake" aria-hidden="true">🎂</div>
+    <h1 class="hero-title">Happy Birthday,<br>My Girl!</h1>
+    <p class="hero-date">21 September — A Day That Gave Me One of My Favorite People.</p>
+    <p class="hero-sub">Different cities, different dreams, but you'll always have the same special place in my heart.</p>
+    <a href="#story" class="hero-button">There's Something I Want to Tell You ♡</a>
+  </section>
+
+  <!-- OUR STORY TIMELINE -->
+  <section class="story" id="story">
+    <p class="section-eyebrow">our story</p>
+    <h2 class="section-title">From 7th Class to Forever</h2>
+    <div class="timeline">
+      <div class="timeline-line" aria-hidden="true"></div>
+
+      <article class="chapter reveal">
+        <div class="chapter-card polaroid">
+          <div class="polaroid-photo ph-1">🎒</div>
+          <p class="polaroid-caption">Chapter 1</p>
+        </div>
+        <div class="chapter-text">
+          <h3>It All Started in 7th Class</h3>
+          <p>Who knew that a friendship from 7th class would become such a beautiful part of my life? We were just schoolgirls back then, completely unaware of how precious these memories would become.</p>
+        </div>
+      </article>
+
+      <article class="chapter reveal reverse">
+        <div class="chapter-card polaroid">
+          <div class="polaroid-photo ph-2">♡</div>
+          <p class="polaroid-caption">Chapter 2</p>
+        </div>
+        <div class="chapter-text">
+          <h3>Growing Up, Growing Together</h3>
+          <p>Life kept moving, we grew up, and our dreams started taking different shapes. But somewhere along the way, you became one of those people I'll always be grateful to have met.</p>
+        </div>
+      </article>
+
+      <article class="chapter reveal">
+        <div class="chapter-card polaroid">
+          <div class="polaroid-photo ph-3">🌷</div>
+          <p class="polaroid-caption">Chapter 3</p>
+        </div>
+        <div class="chapter-text">
+          <h3>Different Cities, Different Dreams</h3>
+          <p>You're pursuing BS Nursing, and I'm pursuing BS Computer Science. Two different fields, two different cities, and two busy lives. Sometimes, all I wish for is one more day when we can sit together like old times.</p>
+        </div>
+      </article>
+
+      <article class="chapter reveal reverse">
+        <div class="chapter-card polaroid">
+          <div class="polaroid-photo ph-4">💌</div>
+          <p class="polaroid-caption">Chapter 4</p>
+        </div>
+        <div class="chapter-text">
+          <h3>Months Apart, But Never Strangers</h3>
+          <p>We might go months without meeting, and sometimes we don't talk for ages. But the moment we start talking, it's like nothing ever changed. No awkwardness, no distance, just us being us.</p>
+        </div>
+      </article>
+
+      <article class="chapter reveal">
+        <div class="chapter-card polaroid">
+          <div class="polaroid-photo ph-5">✨</div>
+          <p class="polaroid-caption">Chapter 5</p>
+        </div>
+        <div class="chapter-text">
+          <h3>More Memories Waiting for Us</h3>
+          <p>This is not the end of our school memories. It's just the beginning of a friendship that I hope stays with us through every chapter of life.</p>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- DISTANCE SECTION -->
+  <section class="distance" id="distance">
+    <div class="distance-cities">
+      <div class="city city-left">
+        <span class="city-icon">🩺</span>
+        <p class="city-label">BS Nursing<br>Her World</p>
+      </div>
+      <div class="city-connector" aria-hidden="true">
+        <svg viewBox="0 0 300 40" class="connector-svg" preserveAspectRatio="none">
+          <path d="M0,20 C75,-10 225,50 300,20" class="connector-path"/>
+        </svg>
+      </div>
+      <div class="city city-right">
+        <span class="city-icon">💻</span>
+        <p class="city-label">BS Computer Science<br>My World</p>
+      </div>
+    </div>
+    <h2 class="distance-title">Different Cities. Different Routines.<br>The Same Friendship.</h2>
+    <p class="distance-text">Sometimes, I wish we studied in the same city. We could meet whenever we wanted, have random hangouts, laugh over the smallest things, and make memories without having to wait for months.</p>
+    <p class="distance-text">But even when life keeps us busy and distance keeps us apart, I'm just happy that I have someone like you in my life.</p>
+  </section>
+
+  <!-- LETTER -->
+  <section class="letter-section" id="letter">
+    <p class="section-eyebrow">for you</p>
+    <h2 class="section-title">A Little Letter From My Heart 💌</h2>
+
+    <div class="envelope-wrap">
+      <button class="envelope" id="envelopeBtn" aria-label="Open the letter">
+        <span class="envelope-back"></span>
+        <span class="envelope-flap"></span>
+        <span class="envelope-letter-peek"></span>
+        <span class="envelope-front-left"></span>
+        <span class="envelope-front-right"></span>
+        <span class="envelope-heart">♡</span>
+      </button>
+      <p class="envelope-hint" id="envelopeHint">Open My Letter</p>
+    </div>
+
+    <div class="letter-paper" id="letterPaper">
+      <p id="letterText" class="letter-text"></p>
+    </div>
+  </section>
+
+  <!-- GALLERY -->
+  <section class="gallery-section" id="gallery">
+    <p class="section-eyebrow">memories</p>
+    <h2 class="section-title">A Gallery of Our Friendship 📸</h2>
+    <p class="gallery-note">(Replace these placeholders with our real photos — just swap the files in <code>assets/photos/</code>)</p>
+
+    <div class="gallery-grid">
+      <button class="polaroid gallery-item tilt-1" data-caption="Our school days ♡">
+        <span class="polaroid-photo gph-1">📷</span>
+        <p class="polaroid-caption">Our school days ♡</p>
+      </button>
+      <button class="polaroid gallery-item tilt-2" data-caption="Memories I'll always keep">
+        <span class="polaroid-photo gph-2">📷</span>
+        <p class="polaroid-caption">Memories I'll always keep</p>
+      </button>
+      <button class="polaroid gallery-item tilt-3" data-caption="My favorite kind of chaos">
+        <span class="polaroid-photo gph-3">📷</span>
+        <p class="polaroid-caption">My favorite kind of chaos</p>
+      </button>
+      <button class="polaroid gallery-item tilt-4" data-caption="The meetups worth waiting for">
+        <span class="polaroid-photo gph-4">📷</span>
+        <p class="polaroid-caption">The meetups worth waiting for</p>
+      </button>
+      <button class="polaroid gallery-item tilt-5" data-caption="Months apart, but still us">
+        <span class="polaroid-photo gph-5">📷</span>
+        <p class="polaroid-caption">Months apart, but still us</p>
+      </button>
+      <button class="polaroid gallery-item tilt-6" data-caption="More memories loading...">
+        <span class="polaroid-photo gph-6">📷</span>
+        <p class="polaroid-caption">More memories loading...</p>
+      </button>
+      <button class="polaroid gallery-item tilt-7" data-caption="A friendship I never want to lose">
+        <span class="polaroid-photo gph-7">📷</span>
+        <p class="polaroid-caption">A friendship I never want to lose</p>
+      </button>
+    </div>
+  </section>
+
+  <!-- Lightbox -->
+  <div class="lightbox" id="lightbox">
+    <button class="lightbox-close" id="lightboxClose" aria-label="Close">&times;</button>
+    <div class="lightbox-photo" id="lightboxPhoto">📷</div>
+    <p class="lightbox-caption" id="lightboxCaption"></p>
+  </div>
+
+  <!-- REASONS -->
+  <section class="reasons-section" id="reasons">
+    <p class="section-eyebrow">just because</p>
+    <h2 class="section-title">Reasons You're Special to Me 🌸</h2>
+    <p class="reasons-note">(tap a heart)</p>
+
+    <div class="reasons-grid">
+      <button class="heart-card"><span class="heart-shape">♡</span><span class="heart-message">Because no matter how much time passes, talking to you still feels natural.</span></button>
+      <button class="heart-card"><span class="heart-shape">♡</span><span class="heart-message">Because you're a part of my life that I never want to lose.</span></button>
+      <button class="heart-card"><span class="heart-shape">♡</span><span class="heart-message">Because our friendship doesn't need daily conversations to feel real.</span></button>
+      <button class="heart-card"><span class="heart-shape">♡</span><span class="heart-message">Because the months of waiting never change how happy I am to see you.</span></button>
+      <button class="heart-card"><span class="heart-shape">♡</span><span class="heart-message">Because some friendships just feel like home.</span></button>
+      <button class="heart-card"><span class="heart-shape">♡</span><span class="heart-message">Because you're YOU, and that's more than enough.</span></button>
+      <button class="heart-card heart-card-final"><span class="heart-shape">♡</span><span class="heart-message">And a million other reasons I could never fit into one website. ♡</span></button>
+    </div>
+  </section>
+
+  <!-- CAKE & WISH -->
+  <section class="cake-section" id="cake">
+    <h2 class="cake-title">Make a Wish, Birthday Girl! ✨</h2>
+    <div class="cake-scene" id="cakeScene">
+      <div class="cake-illustration">
+        <div class="candle-row">
+          <div class="candle"><span class="flame"></span></div>
+          <div class="candle"><span class="flame"></span></div>
+          <div class="candle"><span class="flame"></span></div>
+        </div>
+        <div class="cake-layer cake-top"></div>
+        <div class="cake-drip"></div>
+        <div class="cake-layer cake-bottom"></div>
+        <div class="cake-plate"></div>
+      </div>
+    </div>
+    <button id="blowBtn" class="blow-button">Blow Out Your Candles 🕯️</button>
+    <div class="wish-message" id="wishMessage">
+      <p>May every dream you're chasing find its way to you. May your days be filled with love, your heart with peace, and your life with beautiful surprises.</p>
+      <p>And may we never run out of reasons to meet, laugh, and make new memories together. ♡</p>
+    </div>
+  </section>
+
+  <!-- FINAL SURPRISE -->
+  <section class="final-section" id="final">
+    <div class="final-stars" aria-hidden="true"></div>
+    <h2 class="final-prompt">Before You Go...<br>There's One Last Thing I Want You to Know.</h2>
+    <button id="finalBtn" class="final-button">Click If You Know How Much I Love You ♡</button>
+    <div class="final-reveal" id="finalReveal">
+      <p>No matter how many cities separate us, how busy life gets, or how many months pass between our meetups...</p>
+      <p class="final-emphasis">You'll always be my 7th-class friend.</p>
+      <p>And some friendships are simply too special to ever become distant.</p>
+      <p class="final-emphasis">Happy Birthday, My Girl! ♡</p>
+      <p>21 September — Your Day, Your Magic, Your Little Reminder That You're So Loved.</p>
+      <div class="glow-heart">♡</div>
+      <p class="final-signature">Made with endless love, just for you. ♡</p>
+    </div>
+  </section>
+
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>
